@@ -1,0 +1,45 @@
+.calculatrice{
+   
+    display: grid;
+    width: 300px;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 50px repeat(5, 30px);
+    grid-template-areas: 
+    "res res res res"
+    "7 8 9 reset"
+    "4 5 6 reset"
+    "1 2 3 reset"
+    "0 point plus moins"
+    "egal egal fois div"
+    ;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    margin-top: 5rem;
+    backdrop-filter: blur(5px);
+    background-color: rgb(242, 242, 242);
+    
+}
+
+h3{
+    text-align: center;
+    grid-area: res;
+    margin: 7px 10px 0 0 ;
+}
+ 
+button{
+    background: rgb(13, 1, 35); 
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(0, 41, 189);
+}
+#egal{
+    grid-area:  egal;
+}
+#clear{
+    grid-area: reset;
+}
