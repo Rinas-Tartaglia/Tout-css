@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.container{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    align-items: center;
+}
+.milieur ul{
+    display: flex;
+}
+.milieur ul li{
+    margin: 0px 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.gauche{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: 3px 2px 3px rgb(255, 145, 0);
+}
+.recherche input{
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    border: 0px;
+    text-align: center;
+}
