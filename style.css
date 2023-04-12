@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+.navigation ul li{
+    cursor: pointer;
+    /*joue le meme le role que le display inlineblock*/
+    float: left;
+    margin: 10px;
+    box-shadow: 4px 3px 8px rgba(222, 184, 135, 0.794);
+}
+.navigation ul li:hover{
+    background: rgb(156, 156, 156);
+    transform: scale(1.5);
+    transition: 0.4s;
+}
+.navigation ul li a{
+    /*Le display block est inportant ici pour regrouper le parent et l'enfant*/
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid burlywood;
+    border-radius: 4px;
+    box-shadow: 0;
+}
+.navigation ul li a:hover{
+    color: white;
+}
+.navigation a[rel="prev"]:before{
+    content: "\00AB";
+    margin-right: 0.5em;
+}
+.navigation a[rel="next"]:after{
+    content: "\00BB";
+    margin-left: 0.5em;
+}
