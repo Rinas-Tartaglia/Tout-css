@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+.responsif{
+    background: rgba(23, 6, 6, 0.697);
+    color: white;
+    padding: 10px;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+}
+@media screen and(max-width: 200px){
+    .responsif{
+        padding: 20px;
+        /*flex-wrap: wrap;*/
+        width: 180px;
+        background: red;
+    }
+}
