@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.dimitrisation{
+    display: flex;
+    background: rgb(39, 37, 37);
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 2%;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+.dimitrisation >ul>li{
+    display: inline-block;
+    position: relative;
+}
+.dimitrisation ul li:hover a{
+    background: rgb(68, 68, 73);
+}
+.dimitrisation ul li a{
+    display: block;
+    background-color:black;
+    padding: 15px 20px;
+    color: white;
+}
+.dimitrisation ul ul{
+    position: absolute;
+    display: none;
+    min-width: 160px;
+}
+.dimitrisation ul ul li{
+    position: relative;
+}
+.dimitrisation ul li:hover > ul{
+    display: block;
+}
+.dimitrisation ul ul ul{
+    left: 100%;
+    top: 0px;
+}
+.dimitrisation ul li ul li:hover a{
+    background: rgb(56, 54, 54);
+}
+.dimitrisation ul li ul li ul li:hover a{
+    background: gray;
+}
+.dimitrisation .recherche input{
+    padding: 6px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgba(252, 252, 252, 0.938);
+    outline: none;
+    border: 0;
+    color: rgb(0, 0, 0);
+}
+.dimitrisation .recherche i{
+    position: absolute;
+    margin-left: -208px;
+    margin-top: 6px;
+    font-size: 20px;
+    color: darkblue;
+}
