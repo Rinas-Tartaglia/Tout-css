@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: rgb(224, 219, 219);*/
+    /*border: black solid 6px;
+    height: 300px;*/
+}
+.box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 2rem;
+    font-family: cursive;
+    color: white;
+    font-weight: bold;
+
+}
+.absolute{
+    /*La boîte se deplace par rapport a la page web*/
+    background: red;
+    border: teal solid 5px;
+    /*position: absolute;
+    top: -10px;
+    left: -80px;
+    bottom: 400px;
+    right: 560px;*/
+}
+/*Prendre en compte du fais que quand une boîte est sur une autre alors que faire? on utilise simplement le z-index*/
+.relative{
+    /*La boîte doit bouger par rapport a sa positoion initial*/
+    background-color: darkblue;
+    border: chocolate solid 5px;
+    /*position: relative;
+    top: 70px;
+    right: 57px;*/
+}
+.fixed{
+    background-color: tomato;
+    border: blue solid 5px;
+}
+.sticky{
+    background-color: blueviolet;
+    border: violet solid 5px;
+}
